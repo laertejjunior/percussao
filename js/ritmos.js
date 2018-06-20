@@ -40,8 +40,6 @@ $('a.agogo-samba').click(function (e)
 
 $('a.agogo-xote').click(function (e)
 {
-
-
     $('#exampleModalLabel').html('Agogô do xote');
     var agogo = "M: 2/4\n" +
             "Q:1/4=100\n" +
@@ -59,8 +57,6 @@ $('a.agogo-xote').click(function (e)
 
 $('a.agogo-baiao').click(function (e)
 {
-
-
     $('#exampleModalLabel').html('Agogô do baião');
     var agogo = "M: 2/4\n" +
             "Q:1/4=100\n" +
@@ -78,7 +74,6 @@ $('a.agogo-baiao').click(function (e)
 
 $('a.agogo-funk').click(function (e)
 {
-
     $('#exampleModalLabel').html('Agogô do Funk carioca');
     var agogo = "M: 4/4\n" +
             "Q:1/4=100\n" +
@@ -125,5 +120,4 @@ function render(celula) {
     ABCJS.renderMidi("midi", celula);
 
     $('#exibePartitura').modal('show');
-    e.preventDefault();
 }
