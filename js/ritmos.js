@@ -32,7 +32,7 @@ $('a.agogo-samba').click(function (e)
             "%%MIDI channel 10\n" +
             "%%MIDI program 222\n" +
             "L: 1/8\n" +
-            "|: z/G^G/ G=G/G/ |G=G/G/ z/G^G/:|";
+            "|: z/^GG/ G=G/G/ |G^G/G/ z/=GG/:|";
 
     render(agogo);
     e.preventDefault();
