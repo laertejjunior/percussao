@@ -99,7 +99,7 @@ $('a.agogo-ijexa').click(function (e)
             "%%MIDI channel 10\n" +
             "%%MIDI program 222\n" +
             "L: 1/16\n" +
-            "|: ^GG2=G z GG2 ^G2G2 =G2G2:|";
+            "|: ^GG2=G z GG2 | ^G2G2 =G2G2:|";
 
 
     render(agogo);
