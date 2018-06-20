@@ -106,6 +106,40 @@ $('a.agogo-ijexa').click(function (e)
     e.preventDefault();
 });
 
+$('a.chocalho-samba').click(function (e)
+{
+    $('#exampleModalLabel').html('Chocalho do samba');
+    var dados = "M: 2/4\n" +
+            "Q:1/4=80\n" +
+            "V:V0 clef=perc stafflines=1\n" +
+            "%%voicemap percussion\n" +
+            "%%MIDI channel 10\n" +
+            "%%MIDI program 222\n" +
+            "L: 1/16\n" +
+            "|: AA!>!AA AA!>!AA :|";
+
+
+    render(dados);
+    e.preventDefault();
+});
+
+$('a.recoreco-samba').click(function (e)
+{
+    $('#exampleModalLabel').html('Reco-reco do samba');
+    var dados = "M: 2/4\n" +
+            "Q:1/4=80\n" +
+            "V:V0 clef=perc stafflines=1\n" +
+            "%%voicemap percussion\n" +
+            "%%MIDI channel 10\n" +
+            "%%MIDI program 222\n" +
+            "L: 1/16\n" +
+            "|: !>!AAA!>!A AA!>!AA | AA!>!AA A!>!AAA :|";
+    render(dados);
+    e.preventDefault();
+});
+
+
+
 
 $('a.surdo-clique').click(function (e)
 {
