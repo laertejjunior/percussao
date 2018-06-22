@@ -138,15 +138,92 @@ $('a.recoreco-samba').click(function (e)
     e.preventDefault();
 });
 
-
-
-
-$('a.surdo-clique').click(function (e)
+$('a.recoreco-congo').click(function (e)
 {
-    load();
-    $('#exampleModal').modal('show');
+    $('#exampleModalLabel').html('Casaca do congo');
+    var dados = "M: 2/4\n" +
+            "Q:1/4=80\n" +
+            "V:V0 clef=perc stafflines=1\n" +
+            "%%voicemap percussion\n" +
+            "%%MIDI channel 10\n" +
+            "L: 1/16\n" +
+            "|: A2!>!AA A2!>!AA :|";
+    render(dados);
     e.preventDefault();
 });
+
+$('a.recoreco-frevo').click(function (e)
+{
+    $('#exampleModalLabel').html('Reco-reco do frevo');
+    var dados = "M: 2/4\n" +
+            "Q:1/4=80\n" +
+            "V:V0 clef=perc stafflines=1\n" +
+            "%%voicemap percussion\n" +
+            "%%MIDI channel 10\n" +
+            "L: 1/16\n" +
+            "|: z2AA z2AA :|";
+    render(dados);
+    e.preventDefault();
+});
+
+
+$('a.repique-axe').click(function (e)
+{
+    $('#exampleModalLabel').html('Repique do axé');
+    var dados = "M: 4/4\n" +
+            "Q:1/4=80\n" +
+            "V:V0 clef=perc stafflines=1\n" +
+            "%%voicemap percussion\n" +
+            "%%MIDI channel 10\n" +
+            "L: 1/16\n" +
+            "|: F3F z2 F2 z2 F2 z F3 :|";
+    render(dados);
+    e.preventDefault();
+});
+
+$('a.repique-sambareggae').click(function (e)
+{
+    $('#exampleModalLabel').html('Repique do samba reggae');
+    var dados = "M: 4/4\n" +
+            "Q:1/4=80\n" +
+            "V:V0 clef=perc stafflines=1\n" +
+            "%%voicemap percussion\n" +
+            "%%MIDI channel 10\n" +
+            "L: 1/16\n" +
+            "|:  z2 {/F}F2 z2 {/F}F2 z2 {/F}F2 (3 FFFF2  :|";
+    render(dados);
+    e.preventDefault();
+});
+
+
+$('a.repique-ijexa').click(function (e)
+{
+    $('#exampleModalLabel').html('Repique do ijexá');
+    var dados = "M: 2/4\n" +
+            "Q:1/4=80\n" +
+            "V:V0 clef=perc stafflines=1\n" +
+            "%%voicemap percussion\n" +
+            "%%MIDI channel 10\n" +
+            "L: 1/16\n" +
+            "|:  zF2F z2F2 |z2F2 z2F2 :|";
+    render(dados);
+    e.preventDefault();
+});
+
+$('a.tarol-maracatu').click(function (e)
+{
+    $('#exampleModalLabel').html('Tarol do maracatú');
+    var dados = "M: 4/4\n" +
+            "Q:1/4=80\n" +
+            "V:V0 clef=perc stafflines=1\n" +
+            "%%voicemap percussion\n" +
+            "%%MIDI channel 10\n" +
+            "L: 1/16\n" +
+            "|: {/F}F2 |z2F2 z2F2 :|";
+    render(dados);
+    e.preventDefault();
+});
+
 
 
 function render(celula) {
