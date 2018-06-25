@@ -167,6 +167,24 @@ $('a.recoreco-frevo').click(function (e)
 });
 
 
+$('a.repique-samba').click(function (e)
+{
+    $('#exampleModalLabel').html('Repique do samba');
+    var dados = "%%MIDI drummap F 37\n" +
+            "%%MIDI drummap A   66\n" +
+            "%%MIDI drummap c   65\n" +
+            "%%score (V0 V1)\n" +
+            "Q:1/4=130\n" +
+            "M: 2/4\n" +
+            "L: 1/16\n" +
+            "K:C perc\n" +
+            "[V:V0]  AAc z AAc z :|\n" +
+            "[V:V1]  z3  F z3  F :|" ;
+    render(dados);
+    e.preventDefault();
+});
+
+
 $('a.repique-axe').click(function (e)
 {
     $('#exampleModalLabel').html('Repique do axé');
@@ -232,3 +250,7 @@ function render(celula) {
 
     $('#exibePartitura').modal('show');
 }
+
+$('#exibePartitura').on('hidden.bs.modal', function () {
+    ABCJS.midi.stopPlaying();
+})
