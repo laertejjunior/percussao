@@ -7,15 +7,16 @@ function load() {
 $('a.agogo-maracatu').click(function (e)
 {
     $('#exampleModalLabel').html('Agogô do maracatú');
-    var agogo = "M: 4/4\n" +
-            "Q:1/4=100\n" +
+    var agogo ="%%MIDI drummap F 37\n" +
+            "%%MIDI drummap A   66\n" +
+            "%%MIDI drummap c   65\n" +
+            "%%score (V0)\n" +
             "V:V0 clef=perc stafflines=1\n" +
-            "%%voicemap percussion\n" +
-            "%%MIDI channel 10\n" +
-            "%%MIDI program 222\n" +
+            "Q:1/4=130\n" +
+            "M: 4/4\n" +
+            "K:C perc\n" +
             "L: 1/8\n" +
             "|: ^G=G ^G=G ^G/=G=G/ ^G=G:|";
-
 
     render(agogo);
     e.preventDefault();

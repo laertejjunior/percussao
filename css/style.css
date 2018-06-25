@@ -1,5 +1,5 @@
 
-h2 {font-size: 0.2em;}
+h2 {font-size: 0.1em;}
 
 ol, li {
     margin: 0;
@@ -30,8 +30,8 @@ a:hover {
 @supports (not(display: grid)) and (not(display:flex)){
     .element {float: left;
               min-width: 100px;
-              min-height: 50px;
-              margin: 2px;}
+              min-height: 30px;
+              margin: 0px;}
 }
 
 @supports (not(display: grid)) and (display:flex) {
@@ -42,8 +42,8 @@ a:hover {
     .element {
         flex-grow: 1;
         flex-basis:100px;
-        min-height: 50px;
-        margin: 2px;
+        min-height: 30px;
+        margin: 0px;
     }
     .lanthanoid, .actinoid {
         visibility:hidden;
@@ -195,23 +195,14 @@ a:hover {
 @supports (display: grid){
     .wrapper {
         display: grid;
-        grid-gap: 1px;
+        grid-gap: 0px;
         /*grid-template-columns: repeat(18, 1fr);*/
-        grid-template-rows: repeat(10, 35px);
+        grid-template-rows: repeat(10, 30px);
         max-width: 1140px;
         margin:1em auto;
     }
 
-    .actinoid {
-        grid-column:3;
-        grid-row:7;
-    }
-
-    .lanthanoid {
-        grid-column:3;
-        grid-row:6;
-    }
-
+    
 
     .feature-element {
         grid-column: 3/9;
