@@ -7,16 +7,15 @@ function load() {
 $('a.agogo-maracatu').click(function (e)
 {
     $('#exampleModalLabel').html('Agogô do maracatú');
-    var agogo ="%%MIDI drummap F 37\n" +
-            "%%MIDI drummap A   66\n" +
-            "%%MIDI drummap c   65\n" +
+    var agogo = "%%MIDI drummap A   68\n" +
+            "%%MIDI drummap B   67\n" +
             "%%score (V0)\n" +
             "V:V0 clef=perc stafflines=1\n" +
             "Q:1/4=130\n" +
             "M: 4/4\n" +
             "K:C perc\n" +
             "L: 1/8\n" +
-            "|: ^G=G ^G=G ^G/=G=G/ ^G=G:|";
+            "|: AB AB A/BB/ AB:|";
 
     render(agogo);
     e.preventDefault();
@@ -26,14 +25,15 @@ $('a.agogo-maracatu').click(function (e)
 $('a.agogo-samba').click(function (e)
 {
     $('#exampleModalLabel').html('Agogô do samba');
-    var agogo = "M: 2/4\n" +
-            "Q:1/4=100\n" +
+    var agogo = "%%MIDI drummap A   68\n" +
+            "%%MIDI drummap B   67\n" +
+            "%%score (V0)\n" +
             "V:V0 clef=perc stafflines=1\n" +
-            "%%voicemap percussion\n" +
-            "%%MIDI channel 10\n" +
-            "%%MIDI program 222\n" +
+            "Q:1/4=100\n" +
+            "M: 2/4\n" +
+            "K:C perc\n" +
             "L: 1/8\n" +
-            "|: z/GG/ G^G/G/ |^G=G/G/ z/^GG/:|";
+            "|: z/BB/ BA/A/ |AB/B/ z/AA/:|";
 
     render(agogo);
     e.preventDefault();
@@ -42,16 +42,15 @@ $('a.agogo-samba').click(function (e)
 $('a.agogo-xote').click(function (e)
 {
     $('#exampleModalLabel').html('Agogô do xote');
-    var agogo = "M: 2/4\n" +
-            "Q:1/4=100\n" +
+    var agogo = "%%MIDI drummap A   68\n" +
+            "%%MIDI drummap B   67\n" +
+            "%%score (V0)\n" +
             "V:V0 clef=perc stafflines=1\n" +
-            "%%voicemap percussion\n" +
-            "%%MIDI channel 10\n" +
-            "%%MIDI program 222\n" +
+            "M: 2/4\n" +
+            "Q:1/4=100\n" +
+            "K:C perc\n" +
             "L: 1/8\n" +
-            "|: G2^G2:|";
-
-
+            "|: B2A2:|";
     render(agogo);
     e.preventDefault();
 });
@@ -180,7 +179,7 @@ $('a.repique-samba').click(function (e)
             "L: 1/16\n" +
             "K:C perc\n" +
             "[V:V0]  AAc z AAc z :|\n" +
-            "[V:V1]  z3  F z3  F :|" ;
+            "[V:V1]  z3  F z3  F :|";
     render(dados);
     e.preventDefault();
 });
