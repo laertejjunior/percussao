@@ -11,7 +11,7 @@ $('a.agogo-maracatu').click(function (e)
             "%%MIDI drummap B   67\n" +
             "%%score (V0)\n" +
             "V:V0 clef=perc stafflines=1\n" +
-            "Q:1/4=130\n" +
+            "Q:1/4=100\n" +
             "M: 4/4\n" +
             "K:C perc\n" +
             "L: 1/8\n" +
@@ -58,14 +58,15 @@ $('a.agogo-xote').click(function (e)
 $('a.agogo-baiao').click(function (e)
 {
     $('#exampleModalLabel').html('Agogô do baião');
-    var agogo = "M: 2/4\n" +
-            "Q:1/4=100\n" +
+    var agogo = "%%MIDI drummap A   68\n" +
+            "%%MIDI drummap B   67\n" +
+            "%%score (V0)\n" +
             "V:V0 clef=perc stafflines=1\n" +
-            "%%voicemap percussion\n" +
-            "%%MIDI channel 10\n" +
-            "%%MIDI program 222\n" +
+            "M: 2/4\n" +
+            "Q:1/4=100\n" +
+            "K:C perc\n" +
             "L: 1/8\n" +
-            "|: ^G2=G2:|";
+            "|: A2B2:|";
 
 
     render(agogo);
@@ -75,14 +76,15 @@ $('a.agogo-baiao').click(function (e)
 $('a.agogo-funk').click(function (e)
 {
     $('#exampleModalLabel').html('Agogô do Funk carioca');
-    var agogo = "M: 4/4\n" +
-            "Q:1/4=100\n" +
+    var agogo = "%%MIDI drummap A   68\n" +
+            "%%MIDI drummap B   67\n" +
+            "%%score (V0)\n" +
             "V:V0 clef=perc stafflines=1\n" +
-            "%%voicemap percussion\n" +
-            "%%MIDI channel 10\n" +
-            "%%MIDI program 222\n" +
+            "M: 4/4\n" +
+            "Q:1/4=115\n" +
+            "K:C perc\n" +
             "L: 1/16\n" +
-            "|: ^G3=G z2 G2 ^G2G2 =G3^G:|";
+            "|: A3B z2 B2 A2A2 B3A:|";
 
 
     render(agogo);
@@ -92,14 +94,15 @@ $('a.agogo-funk').click(function (e)
 $('a.agogo-ijexa').click(function (e)
 {
     $('#exampleModalLabel').html('Agogô do Ijexá');
-    var agogo = "M: 2/4\n" +
-            "Q:1/4=80\n" +
+    var agogo = "%%MIDI drummap A   68\n" +
+            "%%MIDI drummap B   67\n" +
+            "%%score (V0)\n" +
             "V:V0 clef=perc stafflines=1\n" +
-            "%%voicemap percussion\n" +
-            "%%MIDI channel 10\n" +
-            "%%MIDI program 222\n" +
+            "Q:1/4=80\n" +
+            "M: 2/4\n" +
+            "K:C perc\n" +
             "L: 1/16\n" +
-            "|: ^GG2=G z GG2 | ^G2G2 =G2G2:|";
+            "|: AA2B z BB2 | A2A2 B2B2:|";
 
 
     render(agogo);
@@ -109,12 +112,15 @@ $('a.agogo-ijexa').click(function (e)
 $('a.chocalho-samba').click(function (e)
 {
     $('#exampleModalLabel').html('Chocalho do samba');
-    var dados = "M: 2/4\n" +
-            "Q:1/4=80\n" +
+    var dados = "%%MIDI drummap A 82  \n %Shaker" +
+            "%%MIDI beat a b c n"+
+            "%%MIDI beataccents"+
+            "%%MIDI beatstring ppfpppfp" +
+            "%%score (V0)\n" +
             "V:V0 clef=perc stafflines=1\n" +
-            "%%voicemap percussion\n" +
-            "%%MIDI channel 10\n" +
-            "%%MIDI program 222\n" +
+            "Q:1/4=80\n" +
+            "M: 2/4\n" +
+            "K:C perc\n" +
             "L: 1/16\n" +
             "|: AA!>!AA AA!>!AA :|";
 
