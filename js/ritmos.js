@@ -162,7 +162,7 @@ $('a.recoreco-congo').click(function (e)
 {
     $('#exampleModalLabel').html('Casaca do congo');
     var dados ="%%MIDI drummap A 74  \n" +
-            "%%MIDI beat 20 20 64 20 \n"+
+            "%%MIDI beat 20 20 20 1 \n"+
             "%%score (V0)\n" +
             "V:V0 clef=perc stafflines=1\n" +
             "Q:1/4=100\n" +
